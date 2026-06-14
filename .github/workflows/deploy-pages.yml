@@ -21,12 +21,12 @@ jobs:
       NEXT_PUBLIC_FIREBASE_API_BASE_URL: https://wellnestapi-4qinfaeidq-uc.a.run.app
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
-          node-version: 20
+          node-version: 22
           cache: npm
 
       - name: Install dependencies

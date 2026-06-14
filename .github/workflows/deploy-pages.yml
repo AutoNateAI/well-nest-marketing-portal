@@ -18,7 +18,6 @@ jobs:
     runs-on: ubuntu-latest
     env:
       NEXT_OUTPUT: export
-      GITHUB_PAGES: true
       NEXT_PUBLIC_FIREBASE_API_BASE_URL: https://wellnestapi-4qinfaeidq-uc.a.run.app
     steps:
       - name: Checkout
@@ -45,3 +44,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
           publish_dir: ./out
+          cname: well-nest-health.autonateai.com

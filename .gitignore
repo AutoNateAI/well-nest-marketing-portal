@@ -1,0 +1,13 @@
+node_modules
+functions/node_modules
+.next
+out
+functions/lib
+.npm-cache
+.env*.local
+.vercel
+.DS_Store
+*.log
+firebase-debug.log
+firestore-debug.log
+ui-debug.log

@@ -1,0 +1,53 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function signedIn() {
+      return request.auth != null;
+    }
+
+    function isAdmin() {
+      return signedIn() && request.auth.token.email == "autonate.ai@gmail.com";
+    }
+
+    match /wellNestChurches/{document=**} {
+      allow read, write: if isAdmin();
+    }
+
+    match /wellNestSermons/{document=**} {
+      allow read, write: if isAdmin();
+    }
+
+    match /wellNestPrograms/{document=**} {
+      allow read, write: if isAdmin();
+    }
+
+    match /wellNestContentIdeas/{document=**} {
+      allow read, write: if isAdmin();
+    }
+
+    match /wellNestCarouselSets/{document=**} {
+      allow read, write: if isAdmin();
+    }
+
+    match /wellNestAssets/{document=**} {
+      allow read, write: if isAdmin();
+    }
+
+    match /wellNestSocialPosts/{document=**} {
+      allow read, write: if isAdmin();
+    }
+
+    match /wellNestLeads/{document=**} {
+      allow read, write: if isAdmin();
+    }
+
+    match /wellNestBookings/{document=**} {
+      allow read, write: if isAdmin();
+    }
+
+    match /wellNestTouchpoints/{document=**} {
+      allow read, write: if isAdmin();
+    }
+  }
+}

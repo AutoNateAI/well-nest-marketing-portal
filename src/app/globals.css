@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,500;600;700&display=swap');
+@import "tailwindcss";
+
+:root {
+  --primary: #4f604f;
+  --secondary: #8a4f37;
+  --primary-container: #677966;
+  --primary-fixed: #d4e8d1;
+  --primary-fixed-dim: #b8ccb6;
+  --on-primary-fixed: #0f1f11;
+  --surface: #f4fafd;
+  --surface-container-lowest: #ffffff;
+  --surface-container-low: #eef5f7;
+  --surface-container: #e8eff1;
+  --surface-container-high: #e2e9ec;
+  --surface-container-highest: #dde4e6;
+  --surface-variant: #dde4e6;
+  --on-surface: #161d1f;
+  --on-surface-variant: #434842;
+  --outline: #747872;
+  --outline-variant: #c4c8c0;
+  --secondary-container: #ffb193;
+  --secondary-fixed: #ffdbce;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--surface);
+  color: var(--on-surface);
+  font-family: "Plus Jakarta Sans", Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+.font-serif {
+  font-family: "Source Serif 4", Georgia, serif;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+.shell-grid {
+  display: grid;
+  grid-template-columns: 264px minmax(0, 1fr);
+}
+
+@media (max-width: 960px) {
+  .shell-grid {
+    grid-template-columns: 1fr;
+  }
+}

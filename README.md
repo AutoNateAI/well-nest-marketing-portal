@@ -83,3 +83,7 @@ The deployed API endpoint is:
 ```text
 https://wellnestapi-4qinfaeidq-uc.a.run.app
 ```
+
+## Operational docs
+
+- [Facebook Page publishing setup](docs/facebook-page-publishing.md)

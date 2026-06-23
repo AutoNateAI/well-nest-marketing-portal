@@ -4,6 +4,7 @@ functions/node_modules
 out
 functions/lib
 .npm-cache
+.secrets
 .env*.local
 .vercel
 .DS_Store

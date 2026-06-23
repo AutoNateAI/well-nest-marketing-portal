@@ -7,7 +7,7 @@ export const CLOUD_API_BASE_URL = (process.env.NEXT_PUBLIC_FIREBASE_API_BASE_URL
 
 let authReadyPromise: Promise<void> | null = null;
 
-function waitForAuthReady() {
+export function waitForAuthReady() {
   if (auth.currentUser) return Promise.resolve();
   authReadyPromise ||= new Promise((resolve) => {
     let unsubscribe = () => {};

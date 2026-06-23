@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "process:sermon": "node scripts/local-sermon-worker.cjs"
   },
   "dependencies": {
     "firebase": "^12.14.0",

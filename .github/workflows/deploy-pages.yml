@@ -44,4 +44,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
           publish_dir: ./out
-          cname: well-nest-health.autonateai.com
+          cname: wellnest.autonateai.com
